@@ -10,7 +10,7 @@
   <body class="page">
     <div class="page__container">
       <header class="header">
-        <img class="header__logo" src="./images/Vector.png" alt="Логотип" />
+        <img class="header__logo" src="./images/Vector.svg" alt="Логотип" />
       </header>
       <main class="content">
         <section class="profile">
@@ -18,10 +18,10 @@
             <img
               class="profile__avatar-image"
               alt="Аватарка"
-              src="./images/image.jpg"
+              src="./images/image.svg"
             />
+            <button title="" class="profile__avatar-image-button"></button>
           </div>
-          <button title="" class="profile__avatar-image-button"></button>
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button class="profile__title-button" type="button"></button>
@@ -36,9 +36,12 @@
           ></button>
         </section>
         <section class="elements">
-          <ul class="elements-list"></ul>
+          <ul class="elements__list"></ul>
         </section>
       </main>
+
+      <!-- Добавить попап -->
+      <section class="popup"></section>
       <footer class="footer">
         <p class="footer__author">&copy;2022 Mesto Russia</p>
       </footer>

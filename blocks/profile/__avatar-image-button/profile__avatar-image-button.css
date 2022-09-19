@@ -1,0 +1,14 @@
+.profile__avatar-image-button {
+  background-color: transparent;
+  background-image: url(../../../images/Vector.png);
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ffffff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  margin: 5px 0 0;
+  box-sizing: border-box;
+  transition: all 0.1s linear;
+  align-self: center;
+}

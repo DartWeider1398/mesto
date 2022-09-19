@@ -1,0 +1,10 @@
+.profile__avatar-image {
+  width: 120px;
+  height: 120px;
+  background-image: url(../../../images/Ellipse.png);
+  border-radius: 50%;
+  background-size: 50%, contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  object-fit: cover;
+}

@@ -9,6 +9,13 @@
   border-radius: 2px;
   margin: 5px 0 0;
   box-sizing: border-box;
-  transition: all 0.1s linear;
-  align-self: center;
+}
+
+.profile__avatar-image-button:focus {
+  outline: 0;
+}
+
+.profile__avatar-image-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }

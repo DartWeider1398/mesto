@@ -8,3 +8,9 @@
   background-position: 50%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .profile__avatar-image {
+    margin-bottom: 26px;
+  }
+}

@@ -1,0 +1,14 @@
+.elements__picture {
+  height: 282px;
+  width: 100%;
+  align-self: flex-start;
+  z-index: 1;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}

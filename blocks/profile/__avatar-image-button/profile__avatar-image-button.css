@@ -19,3 +19,10 @@
   opacity: 0.6;
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+  .profile__avatar-image-button {
+    width: 18px;
+    height: 18px;
+  }
+}

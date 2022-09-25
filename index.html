@@ -7,6 +7,7 @@
     <title>Mesto</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
+
   <body class="page">
     <div class="page__container">
       <header class="header">
@@ -15,7 +16,11 @@
       <main class="content">
         <section class="profile">
           <div class="profile__avatar">
-            <img class="profile__avatar-image" alt="Аватарка" src="./images/image.svg" />
+            <img
+              class="profile__avatar-image"
+              alt="Аватарка"
+              src="./images/image.svg"
+            />
           </div>
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
@@ -29,74 +34,125 @@
         <section class="elements">
           <ul class="elements__list">
             <li class="elements__list-item">
-              <img class="elements__picture" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+              <img
+                class="elements__picture"
+                src="./images/kirill-pershin-1088404-unsplash.jpg"
+                alt="Карачаевск"
+              />
               <div class="elements__container">
                 <h2 class="elemets__text">Карачаевск</h2>
                 <div class="elements__like-container">
-                  <button class="elements__like-button" type="button" onclick="like(this)"></button>
+                  <button
+                    class="elements__like-button"
+                    type="button"
+                    onclick="like(this)"
+                  ></button>
                 </div>
               </div>
             </li>
             <li class="elements__list-item">
-              <img class="elements__picture" src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
+              <img
+                class="elements__picture"
+                src="./images/kirill-pershin-1404681-unsplash.png"
+                alt="Гора Эльбрус"
+              />
               <div class="elements__container">
                 <h2 class="elemets__text">Гора Эльбрус</h2>
                 <div class="elements__like-container">
-                  <button class="elements__like-button" type="button" onclick="like(this)"></button>
+                  <button
+                    class="elements__like-button"
+                    type="button"
+                    onclick="like(this)"
+                  ></button>
                 </div>
               </div>
             </li>
             <li class="elements__list-item">
-              <img class="elements__picture" src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+              <img
+                class="elements__picture"
+                src="./images/kirill-pershin-1556355-unsplash.png"
+                alt="Домбай"
+              />
               <div class="elements__container">
                 <h2 class="elemets__text">Домбай</h2>
                 <div class="elements__like-container">
-                  <button class="elements__like-button" type="button" onclick="like(this)"></button>
+                  <button
+                    class="elements__like-button"
+                    type="button"
+                    onclick="like(this)"
+                  ></button>
                 </div>
               </div>
             </li>
             <li class="elements__list-item">
-              <img class="elements__picture" src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус">
+              <img
+                class="elements__picture"
+                src="./images/kirill-pershin-1404681-unsplash.png"
+                alt="Гора Эльбрус"
+              />
               <div class="elements__container">
                 <h2 class="elemets__text">Гора Эльбрус</h2>
                 <div class="elements__like-container">
-                  <button class="elements__like-button" type="button" onclick="like(this)"></button>
+                  <button
+                    class="elements__like-button"
+                    type="button"
+                    onclick="like(this)"
+                  ></button>
                 </div>
               </div>
             </li>
             <li class="elements__list-item">
-              <img class="elements__picture" src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+              <img
+                class="elements__picture"
+                src="./images/kirill-pershin-1556355-unsplash.png"
+                alt="Домбай"
+              />
               <div class="elements__container">
                 <h2 class="elemets__text">Домбай</h2>
                 <div class="elements__like-container">
-                  <button class="elements__like-button" type="button" onclick="like(this)"></button>
+                  <button
+                    class="elements__like-button"
+                    type="button"
+                    onclick="like(this)"
+                  ></button>
                 </div>
               </div>
             </li>
             <li class="elements__list-item">
-              <img class="elements__picture" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаево-Черкеск">
+              <img
+                class="elements__picture"
+                src="./images/kirill-pershin-1088404-unsplash.jpg"
+                alt="Карачаево-Черкеск"
+              />
               <div class="elements__container">
                 <h2 class="elemets__text">Карачаево-Черкеск</h2>
                 <div class="elements__like-container">
-                  <button class="elements__like-button" type="button" onclick="like(this)"></button>
+                  <button
+                    class="elements__like-button"
+                    type="button"
+                    onclick="like(this)"
+                  ></button>
                 </div>
               </div>
             </li>
           </ul>
         </section>
       </main>
-      </section>
       <footer class="footer">
         <p class="footer__author">&copy;2022 Mesto Russia</p>
       </footer>
       <!-- Попап, редактирования профиля -->
       <div class="popup">
         <div class="popup__container">
-          <img src="./images/Close Icon.png" alt="Крестик" class="popup__close">
+          <img
+            src="./images/CloseIcon.png"
+            alt="Крестик"
+            class="popup__close"
+          />
           <div class="popup__content">
             <h3 class="popup__title">Редактировать профиль</h3>
-            <input type="text" class="popup__name">
-            <input type="text" class="popup__description">
+            <input type="text" class="popup__name" />
+            <input type="text" class="popup__description" />
             <button class="popup__save-button">Сохранить</button>
           </div>
         </div>
@@ -104,6 +160,5 @@
     </div>
   </body>
   <!-- Подключил скрипт -->
-  <script type="text/javascript" src="./scripts/index.js"></script>
-
+  <script src="./scripts/index.js"></script>
 </html>

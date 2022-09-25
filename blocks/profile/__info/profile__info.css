@@ -10,9 +10,11 @@
   padding: 0;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .profile__info {
-      row-gap: 14px;
+    grid-template-columns: 1fr 18px;
+    column-gap: 7px;
+    row-gap: 14px;
+    margin-right: 0;
   }
 }

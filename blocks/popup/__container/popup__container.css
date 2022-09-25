@@ -1,7 +1,12 @@
-.popup__container{
-    /* align-self: center; */
-    max-width: 430px;
-    width: 100%;
-    /* text-align: center; */
-    /* border: 1px solid red; */
+.popup__container {
+  max-width: 430px;
+  width: 100%;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+@media screen and (max-width: 430px) {
+  .popup__container {
+    width: calc(100% - 38px);
+  }
 }

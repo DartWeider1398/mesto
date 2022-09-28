@@ -1,6 +1,6 @@
 .page__container {
   margin: auto;
-  max-width: 1280px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;

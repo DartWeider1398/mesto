@@ -4,14 +4,14 @@
   flex-direction: row;
   box-sizing: border-box;
   align-items: center;
-  padding-bottom: 51px;
-  padding: 45px 200px;
+  padding: 0;
+  margin-bottom: 51px;
+  margin-top: 41px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .profile {
-    /* align-items: center; */
     flex-direction: column;
-    padding: 0;
+    margin-bottom: 33px;
   }
 }

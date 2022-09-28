@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
   background-color: white;
-  padding: 25px 21px 31px;
+  margin: 25px 15px 25px 21px;
+  padding: 0;
   text-align: start;
 }

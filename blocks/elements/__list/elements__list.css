@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 18px;
-  row-gap: 21px;
+  row-gap: 22px;
   justify-items: center;
 }
 
@@ -13,7 +13,6 @@
   .elements__list {
     grid-template-columns: repeat(2, 1fr);
     max-width: 582px;
-    padding-top: 36px;
   }
 }
 

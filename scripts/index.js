@@ -1,34 +1,37 @@
-function like(elem) {
-  elem.classList.toggle("elements__like-button_active");
-}
-
-// Получил элементы
-const popupOpenButton = document.querySelector(".profile__avatar-image-button");
+const popupOpenButton = document.querySelector(".profile__edit-button");
 const popup = document.querySelector(".popup");
 const popupCloseButton = popup.querySelector(".popup__close");
 const profileName = document.querySelector(".profile__title");
 const profileJob = document.querySelector(".profile__subtitle");
-const popupSaveButton = document.querySelector(".popup__save-button");
-const popupName = document.querySelector(".popup__name");
-const popupJob = document.querySelector(".popup__description");
+const changeInfoForm = document.querySelector(".popup__container");
+const popupName = document.querySelector(".popup__input_type_name");
+const popupJob = document.querySelector(".popup__input_type_description");
+const items = document.querySelector(".elements");
 
-const popupToggle = function (event) {
-  popup.classList.toggle("popup__active");
-  popupName.value = profileName.innerHTML;
-  popupJob.value = profileJob.innerHTML;
+const popupToggle = function () {
+  popupName.value = profileName.textContent;
+  popupJob.value = profileJob.textContent;
+  popup.classList.toggle("popup_opened");
 };
 
 const popupChangeInfo = function (event) {
-  profileName.innerHTML = popupName.value;
-  profileJob.innerHTML = popupJob.value;
-  popup.classList.toggle("popup__active");
+  event.preventDefault();
+  profileName.textContent = popupName.value;
+  profileJob.textContent = popupJob.value;
+  popup.classList.toggle("popup_opened");
 };
 
-// Навесить слушатель на клик по кнопке 'О проекте'
-popupOpenButton.addEventListener("click", popupToggle);
+const toggleLikeButton = function (event) {
+  if (event.target.classList.contains("elements__like-button")) {
+    event.target.classList.toggle("elements__like-button_active");
+  }
+}
 
-// Навесил слушатель на клик по крестику
-popupCloseButton.addEventListener("click", popupToggle);
+popupOpenButton.addEventListener('click', popupToggle);
 
-popupSaveButton.addEventListener("click", popupChangeInfo);
+popupCloseButton.addEventListener('click', popupToggle);
+
+changeInfoForm.addEventListener('submit', popupChangeInfo);
+
+items.addEventListener("click", toggleLikeButton);
 

@@ -1,6 +1,4 @@
-.popup__description {
-  margin-left: auto;
-  margin-right: auto;
+.popup__input {
   width: calc(100% - 72px);
   outline: none;
   border-top: none;
@@ -8,12 +6,15 @@
   border-right: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: black;
+  margin-bottom: 37px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 430px) {
-  .popup__description {
+  .popup__input {
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

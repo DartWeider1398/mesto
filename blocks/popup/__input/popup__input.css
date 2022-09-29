@@ -6,7 +6,6 @@
   border-right: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: black;
-  margin-bottom: 37px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -15,6 +14,6 @@
 
 @media screen and (max-width: 430px) {
   .popup__input {
-    width: 85%;
+    width: 100%;
   }
 }

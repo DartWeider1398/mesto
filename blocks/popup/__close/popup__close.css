@@ -7,9 +7,9 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   position: absolute;
-  top: calc(100% / 2 - 210px);
+  top: calc(100% / 2 - 205px);
   align-self: flex-end;
-  margin-right: -38px;
+  margin-right: -40px;
 }
 
 .popup__close:hover {
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 542px) {
   .popup__close {
-    top: calc(100% / 2 - 200px);
+    top: calc(100% / 2 - 198px);
     margin-right: 0;
     margin-bottom: 16px;
     width: 20px;

@@ -5,8 +5,3 @@
     gap: 30px;
 }
 
-@media screen and (max-width: 430px) {
-    .popup__form {
-        width: calc(100% - 44px);
-    }
-}

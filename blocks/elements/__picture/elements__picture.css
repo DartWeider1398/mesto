@@ -12,3 +12,7 @@
   background-position: center;
   object-fit: cover;
 }
+
+.elements__picture:hover {
+  cursor: pointer;
+}

@@ -1,9 +1,9 @@
 .page__container {
   margin: auto;
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 880px;
 }

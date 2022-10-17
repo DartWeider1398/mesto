@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +15,11 @@
       </header>
       <main class="content">
         <section class="profile">
-          <img class="profile__avatar-image" alt="Аватарка" src="./images/image.svg" />
+          <img
+            class="profile__avatar-image"
+            alt="Аватарка"
+            src="./images/image.svg"
+          />
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <p class="profile__subtitle">Исследователь океана</p>
@@ -26,10 +29,9 @@
         </section>
         <section class="elements">
           <ul class="elements__list">
-
             <template id="elements__list-item">
               <li class="elements__list-item">
-                <img class="elements__picture" src="">
+                <img class="elements__picture" />
                 <div class="elements__container">
                   <h2 class="elements__text"></h2>
                   <button class="elements__like-button"></button>
@@ -37,7 +39,6 @@
                 </div>
               </li>
             </template>
-
           </ul>
         </section>
       </main>
@@ -50,9 +51,21 @@
           <button class="popup__close" type="button"></button>
           <h3 class="popup__title">Редактировать профиль</h3>
           <form name="changeInfoForm" class="popup__form">
-            <input type="text" name="changeInfoForm" class="popup__input popup__input_type_name" />
-            <input type="text" name="changeInfoForm" class="popup__input popup__input_type_description" />
-            <button class="popup__save-button" type="submit" name="changeInfoForm">
+            <input
+              type="text"
+              name="changeInfoForm"
+              class="popup__input popup__input_type_name"
+            />
+            <input
+              type="text"
+              name="changeInfoForm"
+              class="popup__input popup__input_type_description"
+            />
+            <button
+              class="popup__save-button"
+              type="submit"
+              name="changeInfoForm"
+            >
               Сохранить
             </button>
           </form>
@@ -64,8 +77,18 @@
           <button type="button" class="popup__close"></button>
           <h3 class="popup__title">Новое место</h3>
           <form name="addCardForm" class="popup__form">
-            <input type="text" name="addCardForm" class="popup__input popup__input_type_title" placeholder="Название" />
-            <input type="text" name="addCardForm" class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" />
+            <input
+              type="text"
+              name="addCardForm"
+              class="popup__input popup__input_type_title"
+              placeholder="Название"
+            />
+            <input
+              type="text"
+              name="addCardForm"
+              class="popup__input popup__input_type_link"
+              placeholder="Ссылка на картинку"
+            />
             <button class="popup__save-button" type="submit" name="addCardForm">
               Создать
             </button>
@@ -86,5 +109,4 @@
 
     <script src="./scripts/index.js"></script>
   </body>
-
 </html>

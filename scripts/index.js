@@ -54,21 +54,6 @@ const initialCards = [
   }
 ];
 
-const likeElement = function (likeButton) {
-  likeButton.classList.toggle('elements__like-button_active');
-}
-
-const deleteElement = function (item) {
-  item.remove
-}
-
-const openImg = function(img, text) {
-  imgPopupImg.src = img.src
-  imgPopupImg.alt = text.textContent
-  imgPopupText.textContent = text.textContent
-  imgPopup.classList.toggle('popup_opened')
-}
-
 const createNewItemFromTemplate = function (cardLink, cardName) {
   const item = itemTemplate.content.cloneNode(true);
   const img = item.querySelector('.elements__picture')
@@ -85,7 +70,7 @@ const createNewItemFromTemplate = function (cardLink, cardName) {
     imgPopupImg.src = e.target.src
     imgPopupImg.alt = e.target.closest('.elements__list-item').querySelector('.elements__text').textContent
     imgPopupText.textContent = e.target.closest('.elements__list-item').querySelector('.elements__text').textContent
-    imgPopup.classList.toggle('popup_opened')
+    togglePopup(imgPopup);
   })
 
   img.src = cardLink;
